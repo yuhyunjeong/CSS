@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+	/*
+		in-line 요소에는 width, height 안된다!!
+								margin-left, margin-right은 가능하나
+								margin-top, margin-bottom 안된다.
+	*/
+	.a{background-color: red;
+		width: 100px; height: 50px;
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 50px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	.b{background-color:green;}
+	.c{background-color:blue;}
+	
+	#a{background-color:red;
+		width: 100px; height: 50px;
+		}
+	#b{background-color:green;}
+	#c{background-color:blue;}
+	
+</style>
+</head>
+<body>
+<span class="a">span요소1</span><span class="b">span요소2</span><span class="c">span요소3</span>
+<hr>
+<div id="a">div요소1</div><div id="b">div요소2</div><div id="c">div요소3</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.a{background-color: red}
+	.b{background-color: green}
+	.c{background-color: blue}
+	
+	#a{background-color: red}
+	#b{background-color: green}
+	#c{background-color: blue}
+	
+	div{width: 200px;height: 100px;}
+	
+	/* 적용안됨
+	span{width: 200px;height: 100px} 
+	*/
+</style>
+
+</head>
+<body>
+
+<!--  div 태그는 block요소(h, p ..)로 한 행을 차지한다. -->
+<div class="a">안녕1</div><div class="b">안녕2</div><div class="c">안녕2</div>
+
+<hr>
+
+<!-- span은 in-line요소(a)로 content 내용이 있는 만큼만 공간을 차지한다. -->
+<span id="a">안녕1</span><span id="b">안녕2</span><span id="c">안녕3</span>
+</body>
+</html>

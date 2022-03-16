@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.a{
+		background-color: red;
+		width: 600px;
+		height: 200px;
+		border-style: solid double dashed dotted; /*상 우 하 좌*/
+		border-width: 5px 15px 10px; /*굵기*/
+		border-color: pink orange;
+		border-radius: 50px 100px 200px 30px;
+		color: white;
+		font-size: 25px;
+		text-align: center;
+		vertical-align: middle; /*div는 display: block 요소이므로 수평정렬X -> display: table-cell로 바꾸면 가능*/
+		display: table-cell;
+	}
+	
+	.b{
+		background-color: green;
+		/*margin-top:20px; */
+		/*margin: 20px;*/ /*상하좌우 모두 20px*/
+		/*margin: 30px 5px 10px;*/ /* 상 좌우 하 */
+		margin: 10px 20px 30px 40px; /*상 우 하 좌 */
+	}
+	
+	.c{
+		background-color: blue;
+		/*padding-left: 50px;*/
+		/*padding: 50px 10px;*/ /*상하 좌우*/
+		width: 300px;
+		height: 300px;
+		border-radius: 150px; /*동그라미*/
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		opacity: 0.1; /* 투명도 0~1 */
+		color: red;
+			}
+</style>
+</head>
+<body>
+<div class="a">margin,padding,border 연습</div>
+<div class="b">margin,padding,border 연습</div>
+<div class="c">margin,padding,border 연습</div>
+</body>
+</html>

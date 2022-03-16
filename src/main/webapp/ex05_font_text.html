@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.a{
+		font-family: 궁서체; 
+		font-size: 20px; 
+		font-weight: bold; 
+		font-style: italic;
+		text-indent: 50px;
+		line-height: 1.5 /*1 은 100% 와 동일 , 200% 는 2  */
+	}
+	
+	/*font 속성 한개로 값 여러개 설정하기(style weight size /line-height family) -> 순서 외워야함 */
+	.b{
+		font: italic bold 20px /1.5 궁서체;
+		
+	}
+	
+	#div{
+		letter-spacing: 5px; /* 문자 사이 간격 */
+		word-spacing: 10px; /* 단어 사이 간격 */
+	}
+	span{
+		color: red; font-weight: bold; /*글자 색상은 font-color 아닌 그냥 color*/
+		text-transform: uppercase;
+	}
+	
+	a{text-decoration: none; }
+	
+	a:link {color: red} /* 한번도 방문한 적 없는 링크 */
+	a:hover{text-decoration: underline; font-style: italic; color: orange;font-size: 20px} /* 마우스를 위에 올렸을 때 */
+	a:active{color: green; text-decoration: line-through;} /* 누르고 있는 동안 */
+	a:visited{color:gray;} /* 방문한 적 있는 링크 */
+	
+	/* 정렬하기 */
+	table{width: 800px; height: 200px; border: 1px black solid; border-collapse: collapse;}
+	td{border: 1px solid red;}
+	
+	table tr td:first-child {text-align:center; vertical-align: bottom;}
+	td:last-child {text-align:right;vertical-align: top;}
+	
+</style>
+</head>
+<body>
+<div class="a">
+	font와 text 관련된 css 알아보기 
+	font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기
+</div>
+
+<hr>
+
+<div class="b">
+	font와 text 관련된 css 알아보기 
+	font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기 font와 text 관련된 css 알아보기
+</div>
+
+<hr>
+<div id="div">
+	오늘은 <span>css</span> 학습하는 날 재미 있어요^^
+	<span>Have a nice day!</span>
+</div>
+
+<hr>
+<a href="http://www.naver.com">네이버</a><p>
+<a href="http://www.daum.net">다음</a><p>
+<a href="http://www.hrd.go.kr">노동부</a><p>
+<a href="http://edu.kosta.or.kr">코스타</a><p>
+<a href="http://www.google.com">구글</a><p>
+
+<hr>
+<table>
+	<tr>
+		<td>오늘도 고생많으셨어요!</td>
+		<td>오늘도 고생많으셨어요!</td>
+	</tr>
+	<tr>
+		<td>오늘도 고생많으셨어요!</td>
+		<td>오늘도 고생많으셨어요!</td>
+	</tr>
+</table>
+</body>
+</html>

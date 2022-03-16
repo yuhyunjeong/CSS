@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+	/*
+		position : absolute;
+						절대좌표로 무조건 0,0의 위치에서부터 이동한다.
+						absolute를 설정한 요소의 다음 요소가 놓이는 위치는 absolute를 설정한
+						요소를 전혀 생각하지 않고 요소를 위치시킨다.
+						
+		position : relative;				
+						상대좌표로 원래 요소가 놓여야 할 위치에서부터 이동한다.
+						relative를 설정한 요소 다음에 놓일 요소는 relative를설정한 요소가 원래
+						있어야 할 위치를 체크하고 그 다음에 놓인다.
+	
+		z-index : position을 설정하면 요소들이 겹칠 수 있는데 이 경우 배치 순서를 결정하기 위해서 사용.
+					숫자가 높을수록 위로 올라온다.
+	*/
+	.a{
+		width: 300px; height: 100px;
+		background-color: red;
+		left: 100px; top: 50px;
+		position:relative;
+		z-index: 4;
+	}
+	
+	.b{
+		width: 300px; height: 100px;
+		background-color: green;
+		position: absolute;
+		top: 20px; left: 50px;
+		z-index: 3;
+	}
+	
+	.c{
+		width: 300px; height: 100px;
+		background-color: blue;
+	}
+	
+	h3{
+		width: 200px; height: 300px;
+		border: dashed 5px pink; 
+		right: 10px; top: 10px;
+		position: fixed;
+	}
+</style>
+</head>
+<body>
+<div class="a">div영역1</div>
+<div class="b">div영역2</div>
+<div class="c">div영역3</div>
+
+배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>배고파요<p>
+
+<h3>오늘 본 상품입니다.</h3>
+</body>
+</html>
